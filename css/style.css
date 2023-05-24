@@ -1,5 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    
+    --main-color: #2E363E;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --grey-color: #A6AEB6;
+    --price-color: #434B53;
+
+    --bg-color-blue: #024C68;
+    --bg-color-blue-light: #0776A0;
+    --bg-color-yellow: #FFB600;
+
+    --font-family-main: 'Lato', sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --font-size-light: 21px;
+    --font-size-medium: 24px;
+    --font-size-height: 28px;
+    --font-size-h4: 32px;
+    --font-size-h3: 36px;
+    --font-size-h2: 48px;
+    --font-size-h1: 58px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 61.35%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: var(--font-family-main);
+}
+
+header {
+    color: var(--white-color);
+}
+
+.heading {
+    padding-top: 43px;
+    padding-bottom: 56px;
+    background-color: var(--bg-color-blue);
+}
+
+.blocks__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-heading {
+    display: flex;
+    gap: 15px;
+}
+
+.phone-grhWork__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-medium);
+    line-height: 152%;
+}
+
+.grhWork {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-light);
+    line-height: 150%;
+}
+
+.basket-buy__heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-height);
+    line-height: 143%;
 }
