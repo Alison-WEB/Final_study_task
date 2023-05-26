@@ -32,13 +32,23 @@
     text-decoration: none;
 }
 
+/* Общие классы */
+
 .wrapper {
     width: 61.35%;
     margin: 0 auto;
 }
 
+.universal-h2 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+    line-height: 133%;
+    text-align: center;
+}
+
 body {
     font-family: var(--font-family-main);
+    color: var(--main-color);
 }
 
 header {
@@ -159,19 +169,11 @@ header {
     gap: 100px;
 }
 
-.blocks__pizza h2 {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h2);
-    line-height: 133%;
-    color: var(--black-color);
-    text-align: center;
-}
-
 .flex-container__pizza {
     display: flex;
     /* gap: 20px; */
     justify-content: space-between;
-    color: var(--main-color);
+    /* color: var(--main-color); */
     flex-wrap: wrap;
 }
 
@@ -231,4 +233,101 @@ header {
 .btn__flex-item:hover {
     background-color: var(--bg-color-yellow);
     color: var(--black-color);
+}
+
+/* Секция about-us */
+
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blocks__about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.flex-container__about-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item__about-us {
+    width: 27px 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-item__about-us img {
+    margin-bottom: 24px;
+}
+
+.flex-item__about-us h4 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-height);
+    margin-bottom: 10px;
+    line-height: 143%;
+}
+
+.flex-item__about-us p {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-light);
+    line-height: 150%;
+}
+
+/* Секция reviews */
+
+.reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blocks__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Секция set-reviews */
+
+.set-reviews {
+    padding-top: 100px;
+    padding-bottom: 106px;
+}
+
+.flex-container__set-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item-text__set-reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-text__set-reviews h2 {
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.list-reasons {
+    margin-bottom: 50px;
+    width: 77.34%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.list-reasons li {
+    color: var(--bg-color-yellow);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+    line-height: 150%;
+}
+
+.list-reasons li span {
+    color: var(--main-color);
 }
