@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@font-face { 
+    font-family: 'Lato'; 
+    src: url('../fonts/Lato-Regular.ttf')  format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+  }
+
+@font-face { 
+    font-family: 'Lato'; 
+    src: url('../fonts/Lato-Bold.ttf')  format('truetype'); 
+    font-weight: bold; 
+    font-style: normal; 
+  }
 
 :root {
     --main-color: #2E363E;
@@ -13,16 +25,16 @@
 
     --font-family-main: 'Lato', sans-serif;
 
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
+    --font-weight-regular: normal;
+    --font-weight-bold: bold;
 
-    --font-size-light: 21px;
-    --font-size-medium: 24px;
-    --font-size-height: 28px;
-    --font-size-h4: 32px;
-    --font-size-h3: 36px;
-    --font-size-h2: 48px;
-    --font-size-h1: 58px;
+    --font-size-light: 2.1rem;
+    --font-size-medium: 2.4rem;
+    --font-size-height: 2.8rem;
+    --font-size-h4: 3.2rem;
+    --font-size-h3: 3.6rem;
+    --font-size-h2: 4.8rem;
+    --font-size-h1: 5.8rem;
 }
 
 * {
@@ -33,6 +45,10 @@
 }
 
 /* Общие классы */
+
+html {
+    font-size: 10px;
+}
 
 .wrapper {
     width: 61.35%;
@@ -51,7 +67,7 @@ body {
     color: var(--main-color);
 }
 
-header {
+header, header a {
     color: var(--white-color);
 }
 
@@ -69,7 +85,7 @@ header {
     align-items: center;
 }
 
-.info-heading {
+.info__heading{
     display: flex;
     gap: 15px;
 }
@@ -116,6 +132,7 @@ header {
     flex-direction: column;
     gap: 60px;
     margin-left: 2.6%;
+    
 }
 
 .block-text__blocks {
@@ -191,8 +208,11 @@ header {
 }
 
 .text-block__flex-item {
+    height: 100%;
     padding: 50px 44px;
-    /* border: 1px solid #F2F6FA; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-block__flex-item h4 {
@@ -205,8 +225,21 @@ header {
 .text-block__flex-item p {
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-light);
+    line-height: 120%;
+
+}
+.text-block__flex-item p:nth-of-type(2) {
+    margin-bottom: 18px;
+    /* line-height: 120%; */
+}
+.text-block__flex-item p:nth-of-type(3) {
+    margin-bottom: 28px;
+    /* line-height: 110%; */
+    font-size: 1.8rem;
+}
+.text-block__flex-item p:nth-of-type(4) {
     line-height: 150%;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .price__flex-item {
@@ -254,7 +287,7 @@ header {
 }
 
 .flex-item__about-us {
-    width: 27px 84%;
+    width: 27.84%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,14 +331,16 @@ header {
     padding-bottom: 106px;
 }
 
-.flex-container__set-reviews {
+.container__set-reviews {
     display: flex;
     justify-content: space-between;
+    gap: 11.32%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 .flex-item-text__set-reviews {
-    display: flex;
-    flex-direction: column;
+    width: 43.4%;
 }
 
 .flex-item-text__set-reviews h2 {
@@ -315,19 +350,183 @@ header {
 
 .list-reasons {
     margin-bottom: 50px;
-    width: 77.34%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    list-style: none;
 }
 
 .list-reasons li {
-    color: var(--bg-color-yellow);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+    line-height: 150%;
+    margin-left: 27px;
+    position: relative;
+}
+
+.list-reasons li::before {
+    content: url(../img/marker.svg);
+    position: absolute;
+    top: -5px;
+    left: -27px;
+}
+
+.list-reasons li span {
+    color: var(--main-color);
+}
+
+.button__set-reviews {
+    padding: 30px 50px;
+    border: none;
+    background-color: var(--bg-color-blue-light);
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 8px;
+    display: inline-block;
+
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-medium);
+    line-height: 152%;
+    color: var(--white-color);
+}
+
+.button__set-reviews:hover {
+    background-color: var(--bg-color-yellow);
+    color: var(--black-color);
+}
+
+
+.flex-item-img__set-reviews {
+    width: 56.6%;
+}
+
+.flex-item-img__set-reviews img {
+    width: 100%;
+}
+
+/* Секция contacts */
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 74px;
+}
+
+.flex-container__contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 9.25%;
+}
+
+.flex-item-map__contacts {
+    border: 5px dashed var(--bg-color-blue-light);
+    border-radius: 10px;
+    /* margin-right: 100px; */
+    transition: .3s;
+    width: 46.3%;
+}
+
+.flex-item-map__contacts iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.flex-item-map__contacts:hover {
+    border: 5px dashed var(--bg-color-yellow);
+}
+
+.flex-item-text__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 53.7%;
+}
+
+.flex-item-text__contacts h2 {
+    text-align: left;
+}
+
+.content__flex-item-text {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact__content img {
+    margin-bottom: 20px;
+}
+
+.contact__content h4 {
+    margin-bottom: 6px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-height);
+    line-height: 143%;
+}
+
+.contact__content p {
+    margin-bottom: 6px;
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-medium);
     line-height: 150%;
 }
 
-.list-reasons li span {
-    color: var(--main-color);
+.contact__content a {
+    margin-bottom: 6px;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-height);
+    line-height: 150%;
+    color: var(--bg-color-blue-light);
+    text-decoration: underline;
+}
+
+
+/* Секция info-footer */
+
+.info-footer {
+    padding-top: 54px;
+    padding-bottom: 56px;
+}
+
+.flex-container__info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container__info-footer p {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-light);
+    line-height: 150%;
+    color: #7E868E;
+}
+
+.block-social-icon {
+    display: flex;
+    gap: 43px;
+    margin-right: 33px;
+}
+
+#icon-vk {
+    background-image: url(../img/vk-blue.svg);
+    width: 36px;
+    height: 36px;
+}
+
+#icon-inst {
+    background-image: url(../img/inst-blue.svg);
+    width: 36px;
+    height: 36px;
+}
+
+#icon-vk:hover {
+    background-image: url(../img/vk-yellow.svg);
+    width: 36px;
+    height: 36px;
+}
+
+#icon-inst:hover {
+    background-image: url(../img/inst-yellow.svg);
+    width: 36px;
+    height: 36px;
 }
