@@ -9,8 +9,6 @@ buttonModal.onclick = () => {
     modalWindow.style.transform = 'translateY(0)';
 }
 
-console.log(modalClose);
-
 modalClose.onclick = () => {
     modalWindow.style.opacity = '0';
     modalWindow.style.visibility = 'hidden';

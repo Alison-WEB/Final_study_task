@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="basket-buy__heading">
-                        <p class="price__busket-buy">
+                        <p class="price__basket-buy">
                             <span id="priceBuy">0</span> ₽
                         </p>
                         <div class="block-icon__basket-buy">
@@ -96,40 +96,46 @@
                         <div class="flex-item__flex-container">
                             <img src="img/pizza-vetchina.png" alt="pizza-vetchina">
                             <div class="text-block__flex-item">
-                                <div>
+                                <div class="pizza__description">
                                     <h4>Ветчинная</h4>
                                     <p>Вес > 900 грамм</p>
                                     <p>Ø 30 см</p>
                                     <p>Состав: тесто, соус «фирменный», сыр, ветчина куриная, томаты, орегано, маслины.</p>
-                                    <p class="price__flex-item">650 ₽/шт.</p>
                                 </div>
-                                <button class="btn__flex-item">В корзину</button>
+                                <div>
+                                    <p class="price__flex-item">650 ₽/шт.</p>
+                                    <button class="btn__flex-item">В корзину</button>
+                                </div>
                             </div>
                         </div>
                         <div class="flex-item__flex-container">
                             <img src="img/pizza-kolbasa.png" alt="pizza-kolbassa">
                             <div class="text-block__flex-item">
-                                <div>
+                                <div class="pizza__description">
                                     <h4>Колбасная</h4>
                                     <p>Вес > 900 грамм</p>
                                     <p>Ø 30 см</p>
                                     <p>Состав:  тесто, соус «фирменный», чеснок, сыр, колбаса вареная, сервелат, томаты, орегано, кетчуп.</p>
-                                    <p class="price__flex-item">600 ₽/шт.</p>
                                 </div>
-                                <button class="btn__flex-item">В корзину</button>
+                                <div>
+                                    <p class="price__flex-item">600 ₽/шт.</p>
+                                    <button class="btn__flex-item">В корзину</button>
+                                </div>
                             </div>
                         </div>
                         <div class="flex-item__flex-container">
                             <img src="img/pizza-sitniy.png" alt="pizza-sitniy">
                             <div class="text-block__flex-item">
-                                <div>
+                                <div class="pizza__description">
                                     <h4>Сытная</h4>
                                     <p>Вес > 900 грамм</p>
                                     <p>Ø 30 см</p>
                                     <p>Состав:  тесто, соус «фирменный», чеснок, сыр, бекон, колбаса вареная, заливка яичная, петрушка.</p>
-                                    <p class="price__flex-item">670 ₽/шт.</p>
                                 </div>
-                                <button class="btn__flex-item">В корзину</button>
+                                <div>
+                                    <p class="price__flex-item">670 ₽/шт.</p>
+                                    <button class="btn__flex-item">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -170,22 +176,73 @@
                     <div class="itcss">
                         <div class="itcss__wrapper">
                             <div class="itcss__items">
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #3f51b5;">111</div>
-                            </div>
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #607d8b;">222</div>
-                            </div>
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #f44336;">333</div>
-                            </div>
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #4caf50;">444</div>
-                            </div>
+                                <div class="itcss__item">
+                                    <div class="slider-container">
+                                        <div class="slider__content">
+                                            <img src="img/icon-quotes.svg">
+                                            <h4>«Пицца прибыла горячей»</h4>
+                                            <p>Я был приятно удивлен высоким уровнем сервиса, который предоставила компания Pizza Sergio. Доставка оказалась очень быстрой и пицца прибыла горячей. Курьер был очень вежлив и предложил мне проверить заказ на наличие ошибок, а&nbsp;также уточнил, нужен ли мне дополнительный соус или приправы. Благодарю за такое отношение.
+                                                </p>
+                                        </div>
+                                        <div class="slider__author">
+                                            <img src="img/author1.png" alt="author1">
+                                            <p>Иван Демидов</p>
+                                            <p>Бийск</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itcss__item">
+                                    <div class="slider-container">
+                                        <div class="slider__content">
+                                            <img src="img/icon-quotes.svg">
+                                            <h4>«Заказ был доставлен точно в оговорённое время»</h4>
+                                            <p>Я, как и мой муж, восхищены доставкой пиццы от Pizza Sergio. Это был не только быстрый, но и очень качественный сервис. Заказ был доставлен точно в оговорённое время, а еда была горячей и вкусной.</p>
+                                        </div>
+                                        <div class="slider__author">
+                                            <img src="img/author2.png" alt="author2">
+                                            <p>Ирина Черкасова</p>
+                                            <p>Бийск</p>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="itcss__item">
+                                    <div class="slider-container">
+                                        <div class="slider__content">
+                                            <img src="img/icon-quotes.svg">
+                                            <h4>«Уверен, что вы останетесь довольны»</h4>
+                                            <p>Если вы ищете надежную компанию, которая предоставляет быструю и качественную доставку пиццы, я настоятельно рекомендую вам обратиться в Pizza Sergio. Уверен, что вы останетесь довольны их высоким уровнем сервиса и отличным качеством еды!</p>
+                                        </div>
+                                        <div class="slider__author">
+                                            <img src="img/author3.png" alt="author3">
+                                            <p>Николай Ерёмин</p>
+                                            <p>Бийск</p>
+                                        </div>
+                                    </div>
+                                </div>                        
+                                <div class="itcss__item">
+                                    <div class="slider-container">
+                                        <div class="slider__content">
+                                            <img src="img/icon-quotes.svg">
+                                            <h4>«Мы точно знаем, что наши ожидания будут оправданы!»</h4>
+                                            <p>Могу смело рекомендовать Pizza Sergio для любителей очень вкусной и качественной пиццы с быстрой и надежной доставкой.  Каждый раз, когда мы заказываем здесь, мы точно знаем, что наши ожидания будут оправданы!</p>
+                                        </div>
+                                        <div class="slider__author">
+                                            <img src="img/author4.png" alt="author4">
+                                            <p>Анна Котова</p>
+                                            <p>Бийск</p>
+                                        </div>                                
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
-                        <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+                        <div class="itcss__btn-wrap">
+                            <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"><svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.1059 2.70605L3.74009 13.0719L14.1059 23.4378" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                                </svg></button>
+                            <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"><svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.19567 2.70605L12.5615 13.0719L2.19567 23.4378" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                                </svg></button>
+                        </div>
                     </div>
                 </div>
             </div>
