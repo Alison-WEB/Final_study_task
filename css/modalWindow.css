@@ -17,6 +17,7 @@
     border: 8px solid #0776A0;
     border-radius: 5px;
     width: 62.5%;
+    max-width: 1200px;
     margin: 5% auto;
     padding: 70px 80px 33px;
     transition: .4s;
@@ -35,8 +36,9 @@
 }
 
 .modal-close img {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
+    margin: 14px 10px 10px;
     transition: .8s;
     cursor: pointer;
 }
@@ -75,11 +77,13 @@ input[type="text"] {
 
 textarea {
     height: 200px;
+    resize: none;
 }
 
 input[type="submit"] {
     padding: 29px 0;
     background-color: #0776A0;
+    border-radius: 8px;
     color: #FFF;
     cursor: pointer;
     font-weight: 700;
@@ -110,3 +114,104 @@ input[type="checkbox"] {
 .approval-text {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1200px) {
+    .modal-content {
+        padding: 40px 50px 26px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .modal-content {
+        padding: 40px 50px 26px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .modal-content {
+        padding: 30px 40px 20px;
+        border: 5px solid #0776A0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .modal-content {
+    padding: 50px 30px;
+    width: 100%;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 18px 0 18px 18px;
+        font-size: 1.8rem;
+    }
+
+    input[type="text"] {
+        height: 70px;
+    }
+}    
+
+@media screen and (max-width: 520px) {
+    input[type="text"],
+    textarea {
+        padding: 18px 0 18px 18px;
+    }
+
+    .modal-main {
+        margin-top: 20px;
+    }
+
+    form {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .modal-content {
+    padding: 30px 20px;
+    width: 100%;
+    min-width: 380px;
+    }
+
+    .modal-header h2 {
+        font-size: 30px;
+        line-height: 123%;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 14px 0 14px 14px;
+        font-size: 1.8rem;
+    }
+
+    input[type="text"] {
+        height: 60px;
+    }
+
+    .modal-close img {
+        width: 22px;
+        height: 22px;
+        margin: 8px 6px 6px;
+    }
+
+    input[type="submit"] {
+        padding: 20px 0;
+        font-size: 20px;
+        line-height: 132%;
+    }
+
+    input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+    }
+    
+    .approval-block label,
+    .approval-text {
+        font-size: 14px;
+        line-height: 130%;
+    }
+}    

@@ -413,7 +413,6 @@
 
     .btn__flex-item {
         padding: 16px 24px;
-
     }
     
     .pizza__description p:nth-of-type(3) {
@@ -432,7 +431,7 @@
     }
 
     .slider__author {
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
 
@@ -485,6 +484,21 @@
 
     .flex-container__info-footer {
         gap: 18px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .block-text__blocks h1 {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-h2);
+        line-height: 120%;
+        margin: 0;
+    }
+    
+    .block-text__blocks h4 {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-height);
+        line-height: 143%;
     }
 }
 
