@@ -53,8 +53,8 @@ display: flex;
   /* width: 100%; */
   /* display: inline-block; */
   /* justify-content: space-between; */
-  width: 6.6rem;
-  height: 6.6rem;
+  width: 66px;
+  height: 66px;
   color: #fff;
   background: var(--bg-color-blue-light);
   transition: 0.3s;
@@ -71,9 +71,7 @@ display: flex;
   display: none;
 }
 
-.itcss__btn:hover,
-.itcss__btn:focus 
-{
+.itcss__btn:hover {
   color: #fff;
   text-decoration: none;
   border: none;
