@@ -312,17 +312,21 @@
         font-size: 9px;
     }
     
-    .wrapper {
-        min-width: 380px;
-        margin: 0 auto;
-    }   
+    .pizza {
+        width: 100%;
+        min-width: 320px;
+    }
 
     .logo__heading {
         width: 180px;
     }
 
+    .block-icon__basket-buy {
+        width: 28%;
+    }
+
     .heading-content {
-        min-width: 380px;
+        min-width: 320px;
         background-image: url(../img/bg-min.png);
         padding-top: 24px;
         padding-bottom: 46px;
@@ -330,7 +334,8 @@
 
     .blocks__heading-content {
         width: 90%;
-        margin: 0 auto;
+        min-width: 280px;
+        /* margin: 0 auto; */
         align-items: center;
         gap: 28px;
     }
@@ -370,6 +375,10 @@
         gap: 40px;
     }
 
+    .flex-item__about-us {
+        width: 65%;
+    }
+
     .flex-item__about-us img {
         margin-bottom: 10px;
     }
@@ -377,6 +386,8 @@
     .reviews {
         padding-top: 40px;
         padding-bottom: 40px;
+        width: 100%;
+        min-width: 320px;
     }
 
     .slider-container {
@@ -398,7 +409,7 @@
     }
         
     .list-reasons li::before {
-        content: url(../img/marker-mini.png);
+        content: url(../img/marker-mini-m.png);
         top: -4px;
         left: -22px;
     }
@@ -500,6 +511,15 @@
         font-size: var(--font-size-height);
         line-height: 143%;
     }
+
+    .flex-item__flex-container {
+        width: 80%;
+        min-width: 200px;
+    }
+        
+    .flex-item__flex-container img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -507,23 +527,31 @@
         font-size: 8px;
     }
     
+    .wrapper {
+        min-width: 280px;
+    }
+
     .heading {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    
-    .flex-item__flex-container {
-        box-shadow: none;
+        min-width: 320px;
     }
 
-    .flex-item__flex-container img {
-        width: 74%;
-        border-radius: 10px;
-        margin: 0 auto;
+    .basket-buy__heading {
+        justify-content: end;
+        padding-right: 20px;
+    }
+
+    .block-icon__basket-buy {
+        width: 21%;
+    }
+
+    .blocks__heading-content {
+        min-width: 280px;
     }
 
     .text-block__flex-item {
-        padding: 26px 50px;
+        padding: 20px 30px;
     }
 
     .flex-container__pizza {
@@ -531,8 +559,7 @@
     } 
 
     .slider-container {
-        border: none;
-        padding: 0px 20px;
+        padding: 20px 20px;
     }
 
     .slider__author img {
@@ -544,14 +571,11 @@
     }
 
     .logo__heading {
-        padding-left: 15px;
-    }
-
-    .basket-buy__heading {
-        padding-right: 10px;
+        width: 140px;
     }
 
     .list-reasons li::before {
+        content: url(../img/marker-mini-s.png);
         top: -2px;
         left: -20px;
     }
@@ -559,7 +583,15 @@
     .flex-item-text__contacts {
         padding: 0 20px;
     }
+
+    .itcss__btn {
+        width: 54px;
+        height: 54px;
+    }
 }
-    /* body {
-        overflow-x: scroll;	
-    } */
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 7px;
+    }
+}

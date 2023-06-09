@@ -190,9 +190,9 @@ header, header a {
 
 .flex-container__pizza {
     display: flex;
-    /* gap: 20px; */
-    justify-content: space-between;
-    /* color: var(--main-color); */
+    column-gap: 20px;
+    row-gap: 30px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -418,7 +418,7 @@ header, header a {
 }
 
 .list-reasons li::before {
-    content: url(../img/marker.svg);
+    content: url(../img/marker-l.svg);
     position: absolute;
     top: -5px;
     left: -27px;
